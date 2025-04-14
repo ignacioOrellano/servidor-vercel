@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usuarios</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+  <div class="min-h-screen flex flex-col items-center justify-center p-4">
+    <div class="w-full max-w-4xl bg-white rounded-lg shadow-md p-6">
+      <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">Tabla de Usuarios</h1>
+
+      <div class="overflow-x-auto">
+        <table class="min-w-full divide-y divide-gray-200">
+          <thead class="bg-gray-50">
+            <tr>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                Nombre</th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                Apellido</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white divide-y divide-gray-200">
+            {{table}}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mt-8 text-center">
+        <a href="/index"
+          class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+          Ir a inicio
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
